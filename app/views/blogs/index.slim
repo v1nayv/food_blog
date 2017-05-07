@@ -1,5 +1,15 @@
 h1 Welcome to #{Apartment::Tenant.current}
 
-
-a href=new_blog_path
-  | New
+table
+  thead
+    tr
+      td Name
+      td Description
+  tbody
+    - @blogs.each do |blog|
+        tr
+          td=blog.name      
+          td=blog.description
+      
+div
+  a href=new_blog_path New
