@@ -1,0 +1,10 @@
+h1 Home page
+
+h2 Create new domain
+
+= simple_form_for @tenant, url: tenants_create_path do |f|
+ 
+  = f.input :name 
+  = f.input :domain
+  
+  = f.submit

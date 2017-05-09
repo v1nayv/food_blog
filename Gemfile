@@ -20,7 +20,7 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-gem 'slim', '~> 3.0', '>= 3.0.8'
+gem 'slim-rails', '~> 3.1', '>= 3.1.2'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 

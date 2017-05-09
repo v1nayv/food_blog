@@ -1,10 +1,6 @@
 class BlogsController < ApplicationController
   def index
-    @blogs = Blog.all
-
-    puts '***************'
-    puts @blogs.length
-    puts '***************'
+    @blogs = Blog.all    
   end
 
   def show
