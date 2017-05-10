@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   def index
-    @tenant = Tenant.new    
+    @tenants = Tenant.all
+    @tenant = Tenant.new
   end
 end

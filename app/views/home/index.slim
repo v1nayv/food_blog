@@ -1,8 +1,19 @@
 h1 Home page
 
+table
+  thead
+    tr
+      td Name
+      td Description
+  tbody
+    - @tenants.each do |tenant|
+        tr
+          td=tenant.name      
+          td=tenant.domain
+
 h2 Create new domain
 
-= simple_form_for @tenant, url: tenants_create_path do |f|
+= simple_form_for @tenant do |f|
  
   = f.input :name 
   = f.input :domain
