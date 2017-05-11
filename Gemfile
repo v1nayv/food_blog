@@ -40,7 +40,6 @@ gem 'materialize-sass', '~> 0.98'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
-  gem 'rename'
 end
 
 group :development do

@@ -1,17 +1,13 @@
 h1 Home page
+          
+ul.collapsible data-collapsible='accordian'
+  - @tenants.each do |tenant|
+      li 
+        div.collapsible-header=tenant.name
+        div.collapsible-body=tenant.domain
+          
 
-table
-  thead
-    tr
-      td Name
-      td Description
-  tbody
-    - @tenants.each do |tenant|
-        tr
-          td=tenant.name      
-          td=tenant.domain
-
-h2 Create new domain
+h2 Create account
 
 = simple_form_for @tenant do |f|
  

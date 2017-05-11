@@ -1,15 +1,11 @@
 h1 Welcome to #{Apartment::Tenant.current}
 
-table
-  thead
-    tr
-      td Name
-      td Description
-  tbody
-    - @blogs.each do |blog|
-        tr
-          td=blog.name      
-          td=blog.description
-      
+
+ul.collapsible data-collapsible='accordian'
+  - @blogs.each do |blog|
+      li 
+        div.collapsible-header=blog.name
+        div.collapsible-body=blog.description
+            
 div
   a href=new_blog_path New
