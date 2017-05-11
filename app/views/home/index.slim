@@ -1,6 +1,6 @@
 h1 Home page
           
-ul.collapsible data-collapsible='accordian'
+ul.collapsible.popout data-collapsible='accordian'
   - @tenants.each do |tenant|
       li 
         div.collapsible-header=tenant.name
