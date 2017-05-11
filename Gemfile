@@ -32,7 +32,7 @@ gem 'jquery-rails'
 gem 'apartment', '~> 1.2'
 gem 'hirb', '~> 0.7.3'
 gem 'simple_form', '~> 3.4'
-gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+gem 'materialize-sass', '~> 0.98'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
