@@ -24,6 +24,8 @@ gem 'slim-rails', '~> 3.1', '>= 3.1.2'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
+gem 'wysiwyg-rails', '~> 2.6'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password

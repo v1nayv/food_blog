@@ -3,6 +3,10 @@ $primary-color: color("blue", "lighten-2") !default;
 $secondary-color: color("yellow", "base") !default;
 @import 'materialize';
 @import "https://fonts.googleapis.com/icon?family=Material+Icons";
+@import "froala_editor.min.css";
+@import "froala_style.min.css";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 
 .navbar {

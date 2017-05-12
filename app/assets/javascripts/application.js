@@ -13,4 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require materialize
+//= require froala_editor.min.js
 //= require_tree .
+
+$(function() {
+   $('div#froala-editor').froalaEditor({
+   })
+});
