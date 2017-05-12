@@ -3,3 +3,16 @@ $primary-color: color("blue", "lighten-2") !default;
 $secondary-color: color("yellow", "base") !default;
 @import 'materialize';
 @import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+
+.navbar {
+  @extend .grey, .lighten-4;
+}
+
+#logo-container {
+  @extend .blue-grey-text;
+}
+
+h2 {
+  font-size: 1.5rem;
+}

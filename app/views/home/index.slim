@@ -1,17 +1,19 @@
-h1 Home page
-          
-ul.collapsible.popout data-collapsible='accordian'
-  - @tenants.each do |tenant|
-      li 
-        div.collapsible-header=tenant.name
-        div.collapsible-body=tenant.domain
-          
 
-h2 Create account
+.section
+  h2 Blogs Available             
+  ul.collapsible.popout data-collapsible='accordian'
+    - @tenants.each do |tenant|
+        li 
+          div.collapsible-header=tenant.name
+          div.collapsible-body=tenant.domain
 
-= simple_form_for @tenant do |f|
- 
-  = f.input :name 
-  = f.input :domain
-  
-  = f.submit
+.divider          
+
+.section
+  h2 Create account
+  = simple_form_for @tenant do |f|
+   
+    = f.input :name 
+    = f.input :domain
+    
+    = f.submit

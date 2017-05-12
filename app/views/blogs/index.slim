@@ -1,11 +1,13 @@
-h1 Welcome to #{Apartment::Tenant.current}
+h2 Welcome to #{Apartment::Tenant.current}
 
+.section
+  ul.collapsible.popout data-collapsible='accordian'
+    - @blogs.each do |blog|
+        li 
+          div.collapsible-header=blog.name
+          div.collapsible-body=blog.description
 
-ul.collapsible.popout data-collapsible='accordian'
-  - @blogs.each do |blog|
-      li 
-        div.collapsible-header=blog.name
-        div.collapsible-body=blog.description
-            
-div
+.divider          
+
+.section            
   a href=new_blog_path New
