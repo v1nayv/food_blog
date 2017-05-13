@@ -14,5 +14,7 @@ module MultiTenantBlog
     config.generators do |g|
       g.template_engine :slim
     end
+
+    config.autoload_paths += %w(#{config.root}/app/models/ckeditor)
   end
 end

@@ -13,10 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require materialize
-//= require froala_editor.min.js
+//= require ckeditor/init
 //= require_tree .
-
-$(function() {
-   $('div#froala-editor').froalaEditor({
-   })
-});

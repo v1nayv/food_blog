@@ -1,9 +1,5 @@
 = simple_form_for @blog do |f|
  
   = f.input :name 
-  = f.input :description
-  
-  div id='froala-editor'  
-    p The buttons below will destroy and init the rich text editor again.
-  
+  = f.cktext_area :description
   = f.submit
