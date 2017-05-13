@@ -4,11 +4,14 @@ h2 Welcome to #{Apartment::Tenant.current}
   ul.collapsible.popout data-collapsible='accordian'
     - @blogs.each do |blog|
         li 
-          div.collapsible-header=blog.name
-          div.collapsible-body=blog.description
+          div.collapsible-header
+            = blog.name
+            span.collapsible-header-action
+              a.waves-effect.waves-lignt.teal.lighten-2.btn View
+          div.collapsible-body=blog.blog_text.html_safe?
 
 .divider          
 
-.section            
-  a.btn-floating.btn-large.waves-effect.waves-light.grey href=new_blog_path
+.section.add-new-blog           
+  a.btn-floating.btn-large.waves-effect.waves-light.teal.lighten-2 href=new_blog_path
     i.material-icons add

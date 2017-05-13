@@ -15,3 +15,15 @@ $secondary-color: color("yellow", "base") !default;
 h2 {
   font-size: 1.5rem;
 }
+
+.add-new-blog {
+  float: right;
+}
+
+.collapsible-header-action {
+  float: right;
+}
+
+.blog-btn {
+  @extend .teal, .lighten-2;
+}
